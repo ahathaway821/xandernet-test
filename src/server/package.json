@@ -5,6 +5,19 @@
   "scripts": {
     "start": "node index.js"
   },
+  "assets": [
+    "assets",
+    {
+      "glob": "index.js",
+      "input": "./server/",
+      "output": "./"
+    },
+    {
+      "glob": "package.json",
+      "input": "./server/",
+      "output": "./"
+    },
+  ],
   "private": true,
   "dependencies": {
     "body-parser": "^1.17.2",

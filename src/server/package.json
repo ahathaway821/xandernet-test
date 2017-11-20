@@ -16,7 +16,7 @@
       "glob": "package.json",
       "input": "./server/",
       "output": "./"
-    },
+    }
   ],
   "private": true,
   "dependencies": {

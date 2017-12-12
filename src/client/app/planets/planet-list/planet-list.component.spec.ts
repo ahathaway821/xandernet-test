@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { PlanetListComponent } from './planet-list.component';
@@ -21,7 +21,7 @@ describe('PlanetListComponent', () => {
       providers: [
         ConfigService,
         { provide: DataService, useClass: testing.DataServiceStub },
-        { provide: MdSnackBar, useClass: testing.MdSnackBarStub }
+        { provide: MatSnackBar, useClass: testing.MatSnackBarStub }
       ],
       schemas: [NO_ERRORS_SCHEMA]
     });
@@ -65,7 +65,7 @@ describe('PlanetListComponent', () => {
 
     it('should set selected planet when clicked', () => {
       const planet = testing.planets[0];
-      de = fixture.debugElement.query(By.css('md-list-item'));
+      de = fixture.debugElement.query(By.css('mat-list-item'));
       el = de.nativeElement;
       el.click();
       expect(component.selectedPlanet).toBe(planet);
@@ -73,7 +73,7 @@ describe('PlanetListComponent', () => {
 
     it('should not set selected planet when not clicked', () => {
       const planet = testing.planets[0];
-      de = fixture.debugElement.query(By.css('md-list-item'));
+      de = fixture.debugElement.query(By.css('mat-list-item'));
       el = de.nativeElement;
       expect(component.selectedPlanet).not.toBe(planet);
     });

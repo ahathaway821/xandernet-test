@@ -1,7 +1,7 @@
 <div class="animated slideInRight">
   <h3>Dashboard</h3>
-  <md-tab-group>
-    <md-tab [label]="allegianceChart.xAxisLabel">
+  <mat-tab-group>
+    <mat-tab [label]="allegianceChart.xAxisLabel">
       <div *ngIf="allegianceSummary">
         <ngx-charts-advanced-pie-chart class="chart-fit"
           [results]="allegianceSummary"
@@ -11,8 +11,8 @@
           >
         </ngx-charts-advanced-pie-chart>
       </div>
-    </md-tab>
-    <md-tab [label]="planetChart.xAxisLabel">
+    </mat-tab>
+    <mat-tab [label]="planetChart.xAxisLabel">
       <div *ngIf="planetSummary">
         <ngx-charts-pie-chart class="chart-fit"
           [results]="planetSummary"
@@ -27,8 +27,8 @@
           >
         </ngx-charts-pie-chart>
       </div>
-    </md-tab>
-    <!--<md-tab label="Colors">
+    </mat-tab>
+    <!--<mat-tab label="Colors">
       <div class="primary-a">100</div>
       <div class="primary-b">200</div>
       <div class="primary-c">300</div>
@@ -46,6 +46,6 @@
       <div class="accent-f">600</div>
       <div class="accent-g">700</div>
       <div class="accent-h">800</div>
-    </md-tab>-->
-  </md-tab-group>
+    </mat-tab>-->
+  </mat-tab-group>
 </div>

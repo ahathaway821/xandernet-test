@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { MdSnackBar, MdSnackBarConfig } from '@angular/material';
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/observable/combineLatest';
@@ -20,7 +20,7 @@ export class DashboardComponent implements OnDestroy, OnInit {
   private subscription: Subscription;
 
   constructor(
-    public snackBar: MdSnackBar,
+    public snackBar: MatSnackBar,
     private configService: ConfigService,
     private dataService: DataService
   ) {}

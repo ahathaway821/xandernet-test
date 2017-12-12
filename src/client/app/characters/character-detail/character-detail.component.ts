@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, SimpleChanges, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/switchMap';
@@ -27,7 +27,7 @@ export class CharacterDetailComponent implements OnDestroy, OnInit {
 
   constructor(
     private dataService: DataService,
-    private snackBar: MdSnackBar,
+    private snackBar: MatSnackBar,
     private configService: ConfigService,
     private route: ActivatedRoute,
   ) { }

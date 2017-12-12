@@ -4,12 +4,12 @@
   <div class="detail" *ngIf="planet">
     <div><i></i></div>
     <p>
-      <md-input-container>
-        <input mdInput placeholder="Name" [(ngModel)]="planet.name">
-      </md-input-container>
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="planet.name">
+      </mat-form-field>
     </p>
     <p>
-      <md-checkbox [(ngModel)]="revealModel">Reveal Model</md-checkbox>
+      <mat-checkbox [(ngModel)]="revealModel">Reveal Model</mat-checkbox>
     </p>
     <pre *ngIf="revealModel">{{planet | json}}</pre>
   </div>

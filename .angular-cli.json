@@ -12,8 +12,8 @@
         "favicon.ico",
         {
           "glob": "**/*.*",
-          "input": "../server/",
-          "output": "../"
+          "input": "src/server",
+          "output": "."
         },
         "manifest.json"
       ],

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/map';
@@ -22,7 +22,7 @@ export class PlanetDetailComponent implements OnDestroy, OnInit {
 
   constructor(
     private dataService: DataService,
-    private snackBar: MdSnackBar,
+    private snackBar: MatSnackBar,
     private configService: ConfigService,
     private route: ActivatedRoute) { }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { MdSnackBar, MdSnackBarConfig } from '@angular/material';
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material';
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/takeUntil';
 
@@ -21,7 +21,7 @@ export class CharacterListComponent implements OnDestroy, OnInit {
   private onDestroy = new Subject();
 
   constructor(
-    public snackBar: MdSnackBar,
+    public snackBar: MatSnackBar,
     private configService: ConfigService,
     private dataService: DataService,
     private router: Router

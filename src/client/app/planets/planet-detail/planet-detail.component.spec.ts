@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
-import { MdSnackBar, MdSnackBarConfig } from '@angular/material';
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material';
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -21,7 +21,7 @@ describe('PlanetDetailComponent', () => {
       providers: [
         ConfigService,
         { provide: DataService, useClass: testing.DataServiceStub },
-        { provide: MdSnackBar, useClass: testing.MdSnackBarStub }
+        { provide: MatSnackBar, useClass: testing.MatSnackBarStub }
       ],
       schemas: [NO_ERRORS_SCHEMA]
     });

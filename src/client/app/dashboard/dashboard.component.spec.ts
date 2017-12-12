@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { AdvancedPieChartComponent, BarComponent } from '@swimlane/ngx-charts';
 
 import { DashboardComponent } from './dashboard.component';
@@ -28,7 +28,7 @@ describe('DashboardComponent', () => {
       providers: [
         ConfigService,
         { provide: DataService, useClass: testing.DataServiceStub },
-        { provide: MdSnackBar, useClass: testing.MdSnackBarStub }
+        { provide: MatSnackBar, useClass: testing.MatSnackBarStub }
       ],
     });
 

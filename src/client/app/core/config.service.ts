@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { MdSnackBarConfig, MdSnackBar } from '@angular/material';
+import { MatSnackBarConfig, MatSnackBar } from '@angular/material';
 
 @Injectable()
 export class ConfigService {
-  snackConfig = new MdSnackBarConfig();
+  snackConfig = new MatSnackBarConfig();
   apiUrl = 'https://www.starwars-api.com/api/';
   httpCacheDuration = 1000; // 1 seconds
   httpDelay = 10; // http delay

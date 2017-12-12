@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -21,7 +21,7 @@ describe('CharacterListComponent', () => {
       providers: [
         ConfigService,
         { provide: DataService, useClass: testing.DataServiceStub },
-        { provide: MdSnackBar, useClass: testing.MdSnackBarStub }
+        { provide: MatSnackBar, useClass: testing.MatSnackBarStub }
       ],
       schemas: [NO_ERRORS_SCHEMA]
     })
@@ -68,7 +68,7 @@ describe('CharacterListComponent', () => {
 
     it('should set selected character when clicked', () => {
       const character = testing.characters[0];
-      de = fixture.debugElement.query(By.css('md-list-item'));
+      de = fixture.debugElement.query(By.css('mat-list-item'));
       el = de.nativeElement;
       el.click();
       expect(component.selectedCharacter).toBe(character);
@@ -76,7 +76,7 @@ describe('CharacterListComponent', () => {
 
     it('should not set selected character when not clicked', () => {
       const character = testing.characters[0];
-      de = fixture.debugElement.query(By.css('md-list-item'));
+      de = fixture.debugElement.query(By.css('mat-list-item'));
       el = de.nativeElement;
       expect(component.selectedCharacter).not.toBe(character);
     });

@@ -54,6 +54,20 @@ pre {
   max-width: 260px;
 }
 
+//xandernet
+.home-background {
+  background-image: url('../assets/Background.jpg');
+  height: 800px;
+  background-size: cover;
+}
+
+.home-title {
+  margin:auto;
+  text-align:center;
+  padding: 70px;
+}
+//
+
 // Characters and Planets
 [md-header] {
   @include primary-color;

@@ -23,7 +23,7 @@ html, body {
 }
 
 .router-link-active {
-  @include primary-background-contrast-color;
+  
 }
 pre {
   background-color: map-get($accent, 100);
@@ -36,6 +36,7 @@ pre {
 .home-background {
   background-image: url('../assets/Background.jpg');
   height: 800px;
+  background-position: center;
   background-size: cover;
 }
 
@@ -69,11 +70,16 @@ pre {
 .mat-toolbar.home-navbar {
   align-items: center;
   font-family: 'Roboto Mono' monospace;
-  background-color:white;
+  background-color: white;
+}
+
+.mat-toolbar .mat-button {
+  width: 90px;
 }
 
 .mat-button {
   font-family: monospace;
+  //width:200px;
 }
 //
 

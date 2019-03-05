@@ -16,7 +16,7 @@
       </mat-select>
     </p>
     <p>
-      <mat-select placeholder="Home World" [(ngModel)]="character.homeWorldId" [disabled]="!ready" (change)="syncHomeWorld()">
+      <mat-select placeholder="Home World" [(ngModel)]="character.homeWorldId" [disabled]="!ready" (selectionChange)="syncHomeWorld()">
         <mat-option *ngFor="let planet of planets" [value]="planet.id">
           {{ planet.name }}
         </mat-option>

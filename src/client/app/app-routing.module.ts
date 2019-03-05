@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard', },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', pathMatch: 'full', component: PageNotFoundComponent },
 ];
 

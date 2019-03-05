@@ -10,6 +10,6 @@ export class ConfigService {
 
   constructor() {
     this.snackConfig.duration = 2500;
-    this.snackConfig.extraClasses = ['snack'];
+    this.snackConfig.panelClass = ['snack'];
   }
 }

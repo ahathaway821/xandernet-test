@@ -13,7 +13,6 @@ import {
   MatToolbarModule,
   MatSnackBarModule
 } from '@angular/material';
-import { PieChartModule } from '@swimlane/ngx-charts';
 
 const modules = [
   CommonModule,
@@ -28,8 +27,7 @@ const modules = [
   MatSelectModule,
   MatSnackBarModule,
   MatTabsModule,
-  MatToolbarModule,
-  PieChartModule,
+  MatToolbarModule
 ];
 
 @NgModule({

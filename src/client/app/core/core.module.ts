@@ -7,7 +7,6 @@ import { SharedModule } from '../shared/shared.module';
 import { NavComponent } from './nav/nav.component';
 import { AuthService } from './auth.service';
 import { ConfigService } from './config.service';
-import { DataService } from './data.service';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { HeaderInterceptor } from './header.interceptor';
 import { LogInterceptor } from './log.interceptor';
@@ -23,7 +22,6 @@ import { LogInterceptor } from './log.interceptor';
   providers: [
     AuthService,
     ConfigService,
-    DataService,
     { provide: HTTP_INTERCEPTORS, useClass: HeaderInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: LogInterceptor, multi: true },
   ]

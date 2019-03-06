@@ -67,6 +67,30 @@ pre {
   border-radius:20px;
 }
 
+.contact-card {
+  background-color:white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item {
+  max-width: 50%;
+}
+
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
+}
+
 .mat-toolbar.home-navbar {
   align-items: center;
   font-family: 'Roboto Mono' monospace;
@@ -81,9 +105,8 @@ pre {
   font-family: monospace;
   //width:200px;
 }
-//
 
-// Characters and Planets
+//Deprecated
 [md-header] {
   @include primary-color;
 }
